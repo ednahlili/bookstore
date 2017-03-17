@@ -1,0 +1,542 @@
+.head {
+    width: 100%;
+    height: 30px;
+    background: #F1F1F1;
+    line-height: 30px;
+}
+
+.head-left {
+    float: left;
+    height: 30px;
+    padding: 0 2px;
+}
+
+.head-right li {
+    padding: 0 5px;
+    border-left: 1px solid #CCC;
+    padding: 0 8px;
+}
+
+.head a {
+    font: 14px/150% Arial, Verdana, "\5b8b\4f53";
+}
+
+.logo_search {
+    width: 1210px;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.logo {
+    height: 60px;
+    width: 150px;
+    float: left;
+}
+
+.search {
+    float: right;
+    width: 757px;
+    height: 34px;
+    margin: 10px auto 0 auto;
+    margin-right: 100px
+}
+
+.search select {
+    font-size: 14px;
+    color: #999999;
+    width: 100px;
+    float: left;
+    position: relative;
+    height: 34px;
+    border: 3px solid #f58400;
+    outline: none;
+
+}
+
+.search input.inp_srh {
+    border-bottom: 3px solid #f58400;
+    border-top:3px solid #f58400;
+    border-left:0;
+    border-right:0;
+    width: 600px;
+    height: 28px;
+    float: left;
+    outline: none;
+    padding-left: 3px;
+}
+
+.search input.btn_srh {
+    background: #f58400;
+    color: white;
+    font-family: "΢���ź�";
+    font-size: 15px;
+    width: 50px;
+    height: 34px;
+    border:0;
+}
+
+.main {
+    width: 1210px;
+    margin: 0 auto;
+    height: 705px;
+}
+
+.topmenu {
+    float: left;
+    display: block;
+    width: 220px;
+    border: 2px solid #e4393c;
+    margin: 0;
+    padding: 0;
+}
+
+.toptitle {
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    font-size: 11pt;
+    font-weight: bold;
+    color: White;
+    background: #e4393c;
+    padding-left: 20px;
+}
+
+.topmenu li {
+    height: 60px;
+    line-height: 30px;
+    font-size: 11pt;
+    list-style-type: none;
+    text-align: left;
+    padding-left: 8px;
+    z-index: 3;
+    background-image: url(../images/right.jpg);
+    background-repeat: no-repeat;
+    background-position: right;
+    font-weight: bold;
+}
+
+.topmenu li a {
+    text-decoration: none;
+    color: #313131;
+}
+
+.topmenu li a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #e4393c;
+}
+
+.topmenu .lihover /*����ƶ�������ʱ��Ӧ�õ���ʽ*/
+{
+    border: 1px solid #DDD;
+    border-right: 0;
+    box-shadow: 0 0 8px #DDD;
+    -moz-box-shadow: 0 0 8px #DDD;
+    -webkit-box-shadow: 0 0 8px #DDD;
+    background-image: none;
+    height: 60px;
+    border-left: 4px solid #e4393c;
+}
+
+.topmenu .lihover .submenu /*������*/
+{
+    display: block;
+}
+
+.topmenu .lihover span /*��ɫС����*/
+{
+    background: white;
+    display: inline-block;
+    z-index: 20;
+    width: 30px;
+    height: 60px;
+    float: right;
+    position: relative;
+
+}
+
+.submenu {
+    display: none;
+    width: 495px;
+    left: 285px;
+    position: absolute;
+    top: 130px;
+    border: 1px solid #DDD;
+    z-index: 4;
+    background: white;
+    box-shadow: 0 0 8px #DDD;
+    -moz-box-shadow: 0 0 8px #DDD;
+    -webkit-box-shadow: 0 0 8px #DDD;
+}
+
+.leftdiv {
+    float: left;
+    width: 490px;
+    margin: 5px;
+}
+
+.leftdiv dl {
+    display: block;
+    border-bottom: 1px solid #EEE;
+    padding-bottom: 6px;
+    overflow: hidden;
+}
+
+.leftdiv dl dt {
+    display: block;
+    float: left;
+    width: 60px;
+    text-align: right;
+    height: 30px;
+    line-height: 30px;
+    padding-right: 6px;
+}
+
+.leftdiv dl dt a {
+    color: #e4393c;
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 10pt;
+}
+
+.leftdiv dl dd {
+    display: block;
+    overflow: hidden;
+}
+
+.leftdiv dl dd a {
+    display: block;
+    float: left;
+    border-left: 1px solid #CCC;
+    color: #737373;
+    font-size: 9pt;
+    padding: 0 8px;
+    height: 20px;
+    line-height: 20px;
+    margin: 4px 0;
+}
+
+.topmenu b {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    font-size: 10pt;
+}
+
+.menu {
+    float: left;
+    height: 705px;
+    width: 740px;
+}
+
+.right_right {
+    float: right;
+    height: 705px;
+    width: 240px;
+}
+
+.menu_list {
+    height: 40px;
+    background: #e4393c;
+}
+
+.menu_list ul li {
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+}
+
+.menu_list a {
+    color: white;
+}
+
+.menu a:hover {
+    float: left;
+    display: block;
+    font-weight: bold;
+}
+
+.ad {
+    height: 342px;
+    overflow: hidden;
+}
+
+.newbook {
+    width: 740px;
+    height: 315px;
+    background-color: #FFF;
+    overflow: hidden;
+}
+
+.newbook_title {
+    height: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #333;
+    border-bottom: 1px solid #3c4d6a;
+    font: 400 18px "microsoft yahei";
+}
+
+.newbook_list {
+    height: 270px;
+    border: 1px solid #e6e6e6;
+    border-top: 5px;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+
+.newbook_list li {
+    float: left;
+    height: 265px;
+    overflow: hidden;
+    vertical-align: middle;
+    padding: 3px 0 0 18px;
+
+}
+
+.newbook_list img {
+    display: block;
+    height: 160px;
+    overflow: hidden;
+    vertical-align: middle;
+    width: 160px;
+    position: relative;
+}
+
+.xs_price {
+    margin: 0 auto;
+    padding-top: 3px;
+    width: 66%;
+    position: relative;
+}
+
+.travel-ul .xs_price {
+    text-align: center;
+}
+
+.xs_price {
+    color: #555;
+    font-family: Tahoma, Geneva, sans-serif;
+    height: 20px;
+    white-space: nowrap;
+    width: 160px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.xs_price span {
+    line-height: 25px;
+    padding-left: 12px;
+}
+
+span.old-price {
+    background: url(../img/bg.png) no-repeat scroll 0 -422px transparent;
+    color: #757575;
+    font-weight: 400;
+    padding-right: 5px;
+    text-decoration: line-through;
+}
+
+span.new-price {
+    background: url(../img/bg.png) no-repeat scroll 0 -420px transparent;
+    color: #ff4a00;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.book-name {
+    height: 37px;
+    overflow: hidden;
+    text-align: center;
+    width: 160px;
+    position: relative;
+}
+
+.book-name a {
+    text-decoration: none;
+    color: #757575;
+    outline: 0;
+}
+
+.xscx {
+    height: 365px;
+    width: 235px;
+    border: 1px solid #666;
+    background-color: #f9f9f9;
+    clear: both;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.xscx_list li {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+}
+
+.xscx_list a:hover {
+    color: #C7754F;
+    text-decoration: underline;
+}
+
+.xscx_list strong {
+    background: #999999;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 4px;
+    padding-top: 4px;
+    text-align: center;
+    width: 18px;
+}
+
+.bd {
+    width: 235px;
+    height: 20px;
+    margin-top: 25px;
+}
+
+.bd a {
+    float: right;
+    color: #0B85FF;
+}
+
+.tscx {
+    height: 325px;
+    width: 235px;
+    clear: both;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.tscx_title {
+    height: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #333;
+    border-bottom: 1px solid #3c4d6a;
+    font: 400 18px "microsoft yahei";
+
+}
+
+.tscx_list {
+    border: 1px solid #666;
+    border-top: none;
+    background-color: #f9f9f9;
+}
+
+.tscx_list li {
+    overflow: hidden;
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+    padding: 5px 10px;
+}
+
+.tscx_list a:hover {
+    color: #C7754F;
+    text-decoration: underline;
+}
+
+.tscx_list strong {
+    background: #999999;
+    color: #fff;
+    display: block;
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    height: 18px;
+    line-height: 18px;
+    margin-right: 4px;
+    padding-top: 4px;
+    text-align: center;
+    width: 18px;
+}
+
+.main2 {
+    width: 1210px;
+    margin: 0 auto;
+    height: 950px;
+}
+
+.book {
+    height: 700px;
+    width: 100%;
+    margin-top: 10px;
+    /*background-color:#99CCCC*/
+}
+
+.tjbook_title {
+    height: 25px;
+    padding-top: 25px;
+    padding-left: 20px;
+    color: #C7754F;
+    border-bottom: 1px solid #3c4d6a;
+    font: 400 18px "microsoft yahei";
+}
+
+.one, .two {
+    padding-right: 25px;
+}
+
+.copyright {
+    margin: 10px 0;
+}
+
+.copyright_content {
+    height: 250px;
+    width: 100%;
+    margin: 0 auto;
+    /*background-color:#E8E8E8;*/
+    padding-top: 20px;
+    margin-top: 10px;
+}
+
+.copyright_content li {
+    float: left;
+    width: 300px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "΢���ź�";
+    background: url(../images/line.png) no-repeat right center;
+}
+
+.copyright_content a {
+    color: #000;
+    font-size: 14px;
+}
+
+.
+.copyright_title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#footer {
+    border-top: 1px solid #E5E5E5;
+    padding: 20px 0 30px;
+    text-align: center;
+    color: #666;
+}
+
+#footer a {
+    color: #666;
+}
+
+#footer a:hover {
+    color: #C7754F;
+    text-decoration: underline;
+}
+
+
