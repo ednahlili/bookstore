@@ -1,8 +1,9 @@
+@charset 'utf-8';
 .head {
+    line-height: 30px;
     width: 100%;
     height: 30px;
-    background: #F1F1F1;
-    line-height: 30px;
+    background: #f1f1f1;
 }
 
 .head-left {
@@ -13,24 +14,24 @@
 
 .head-right li {
     padding: 0 5px;
-    border-left: 1px solid #CCC;
     padding: 0 8px;
+    border-left: 1px solid #ccc;
 }
 
 .head a {
-    font: 14px/150% Arial, Verdana, "\5b8b\4f53";
+    font: 14px/150% Arial, Verdana, '\5b8b\4f53';
 }
 
 .logo_search {
     width: 1210px;
-    margin: 0 auto;
     height: 60px;
+    margin: 0 auto;
 }
 
 .logo {
-    height: 60px;
-    width: 150px;
     float: left;
+    width: 150px;
+    height: 60px;
 }
 
 .search {
@@ -38,81 +39,80 @@
     width: 757px;
     height: 34px;
     margin: 10px auto 0 auto;
-    margin-right: 100px
+    margin-right: 100px;
 }
 
 .search select {
     font-size: 14px;
-    color: #999999;
-    width: 100px;
-    float: left;
     position: relative;
+    float: left;
+    width: 100px;
     height: 34px;
+    color: #999;
     border: 3px solid #f58400;
     outline: none;
-
 }
 
 .search input.inp_srh {
-    border-bottom: 3px solid #f58400;
-    border-top:3px solid #f58400;
-    border-left:0;
-    border-right:0;
+    float: left;
     width: 600px;
     height: 28px;
-    float: left;
-    outline: none;
     padding-left: 3px;
+    border-top: 3px solid #f58400;
+    border-right: 0;
+    border-bottom: 3px solid #f58400;
+    border-left: 0;
+    outline: none;
 }
 
 .search input.btn_srh {
-    background: #f58400;
-    color: white;
-    font-family: "΢���ź�";
+    font-family: '΢���ź�';
     font-size: 15px;
     width: 50px;
     height: 34px;
-    border:0;
+    color: white;
+    border: 0;
+    background: #f58400;
 }
 
 .main {
     width: 1210px;
-    margin: 0 auto;
     height: 705px;
+    margin: 0 auto;
 }
 
 .topmenu {
-    float: left;
     display: block;
+    float: left;
     width: 220px;
-    border: 2px solid #e4393c;
     margin: 0;
     padding: 0;
+    border: 2px solid #e4393c;
 }
 
 .toptitle {
-    height: 40px;
-    line-height: 40px;
-    text-align: left;
     font-size: 11pt;
     font-weight: bold;
+    line-height: 40px;
+    height: 39px;
+    padding-left: 20px;
+    text-align: left;
     color: White;
     background: #e4393c;
-    padding-left: 20px;
 }
 
 .topmenu li {
-    height: 60px;
-    line-height: 30px;
     font-size: 11pt;
+    font-weight: bold;
+    line-height: 30px;
+    z-index: 3;
+    height: 60px;
+    padding-left: 8px;
     list-style-type: none;
     text-align: left;
-    padding-left: 8px;
-    z-index: 3;
     background-image: url(../images/right.jpg);
     background-repeat: no-repeat;
     background-position: right;
-    font-weight: bold;
 }
 
 .topmenu li a {
@@ -121,82 +121,85 @@
 }
 
 .topmenu li a:hover {
-    text-decoration: underline;
     font-weight: bold;
+    text-decoration: underline;
     color: #e4393c;
 }
 
-.topmenu .lihover /*����ƶ�������ʱ��Ӧ�õ���ʽ*/
+.topmenu .lihover
+/*����ƶ�������ʱ��Ӧ�õ���ʽ*/
+
 {
-    border: 1px solid #DDD;
-    border-right: 0;
-    box-shadow: 0 0 8px #DDD;
-    -moz-box-shadow: 0 0 8px #DDD;
-    -webkit-box-shadow: 0 0 8px #DDD;
-    background-image: none;
     height: 60px;
+    border: 1px solid #ddd;
+    border-right: 0;
     border-left: 4px solid #e4393c;
+    background-image: none;
+    -webkit-box-shadow: 0 0 8px #ddd;
+    -moz-box-shadow: 0 0 8px #ddd;
+    box-shadow: 0 0 8px #ddd;
 }
 
-.topmenu .lihover .submenu /*������*/
+.topmenu .lihover .submenu
+/*������*/
+
 {
     display: block;
 }
 
-.topmenu .lihover span /*��ɫС����*/
+.topmenu .lihover span
+/*��ɫС����*/
+
 {
-    background: white;
-    display: inline-block;
+    position: relative;
     z-index: 20;
+    display: inline-block;
+    float: right;
     width: 30px;
     height: 60px;
-    float: right;
-    position: relative;
-
+    background: white;
 }
 
 .submenu {
+    position: absolute;
+    z-index: 89;
+    top: 130px;
+    left: 285px;
     display: none;
     width: 495px;
-    left: 285px;
-    position: absolute;
-    top: 130px;
-    border: 1px solid #DDD;
-    z-index: 4;
+    border: 1px solid #ddd;
     background: white;
-    box-shadow: 0 0 8px #DDD;
-    -moz-box-shadow: 0 0 8px #DDD;
-    -webkit-box-shadow: 0 0 8px #DDD;
+    -webkit-box-shadow: 0 0 8px #ddd;
+    -moz-box-shadow: 0 0 8px #ddd;
+    box-shadow: 0 0 8px #ddd;
 }
 
 .leftdiv {
-    float: left;
-    width: 490px;
     margin: 5px;
 }
 
 .leftdiv dl {
     display: block;
-    border-bottom: 1px solid #EEE;
-    padding-bottom: 6px;
     overflow: hidden;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #eee;
 }
 
 .leftdiv dl dt {
+    line-height: 30px;
     display: block;
     float: left;
     width: 60px;
-    text-align: right;
     height: 30px;
-    line-height: 30px;
     padding-right: 6px;
+    text-align: right;
 }
 
 .leftdiv dl dt a {
-    color: #e4393c;
+    font-size: 10pt;
     font-weight: bold;
     text-decoration: underline;
-    font-size: 10pt;
+    color: #e4393c;
 }
 
 .leftdiv dl dd {
@@ -205,35 +208,35 @@
 }
 
 .leftdiv dl dd a {
+    font-size: 9pt;
+    line-height: 20px;
     display: block;
     float: left;
-    border-left: 1px solid #CCC;
-    color: #737373;
-    font-size: 9pt;
-    padding: 0 8px;
     height: 20px;
-    line-height: 20px;
     margin: 4px 0;
+    padding: 0 8px;
+    color: #737373;
+    border-left: 1px solid #ccc;
 }
 
 .topmenu b {
+    font-size: 10pt;
+    font-weight: normal;
+    line-height: 30px;
     display: block;
     height: 30px;
-    line-height: 30px;
-    font-weight: normal;
-    font-size: 10pt;
 }
 
 .menu {
     float: left;
-    height: 705px;
     width: 740px;
+    height: 705px;
 }
 
 .right_right {
     float: right;
-    height: 705px;
     width: 240px;
+    height: 705px;
 }
 
 .menu_list {
@@ -242,11 +245,11 @@
 }
 
 .menu_list ul li {
-    height: 40px;
     line-height: 40px;
-    text-align: center;
-    padding: 0 8px;
     position: relative;
+    height: 40px;
+    padding: 0 8px;
+    text-align: center;
 }
 
 .menu_list a {
@@ -254,63 +257,62 @@
 }
 
 .menu a:hover {
-    float: left;
-    display: block;
     font-weight: bold;
+    display: block;
+    float: left;
 }
 
 .ad {
-    height: 342px;
     overflow: hidden;
+    height: 342px;
 }
 
 .newbook {
+    overflow: hidden;
     width: 740px;
     height: 315px;
-    background-color: #FFF;
-    overflow: hidden;
+    background-color: #fff;
 }
 
 .newbook_title {
+    font: 400 18px 'microsoft yahei';
     height: 25px;
     padding-top: 25px;
     padding-left: 20px;
     color: #333;
     border-bottom: 1px solid #3c4d6a;
-    font: 400 18px "microsoft yahei";
 }
 
 .newbook_list {
+    overflow: hidden;
     height: 270px;
+    padding: 10px 10px;
     border: 1px solid #e6e6e6;
     border-top: 5px;
-    overflow: hidden;
-    padding: 10px 10px;
 }
 
 .newbook_list li {
     float: left;
-    height: 265px;
     overflow: hidden;
-    vertical-align: middle;
+    height: 265px;
     padding: 3px 0 0 18px;
-
+    vertical-align: middle;
 }
 
 .newbook_list img {
-    display: block;
-    height: 160px;
-    overflow: hidden;
-    vertical-align: middle;
-    width: 160px;
     position: relative;
+    display: block;
+    overflow: hidden;
+    width: 160px;
+    height: 160px;
+    vertical-align: middle;
 }
 
 .xs_price {
+    position: relative;
+    width: 66%;
     margin: 0 auto;
     padding-top: 3px;
-    width: 66%;
-    position: relative;
 }
 
 .travel-ul .xs_price {
@@ -318,13 +320,13 @@
 }
 
 .xs_price {
-    color: #555;
     font-family: Tahoma, Geneva, sans-serif;
-    height: 20px;
-    white-space: nowrap;
-    width: 160px;
-    margin-top: 5px;
     overflow: hidden;
+    width: 160px;
+    height: 20px;
+    margin-top: 5px;
+    white-space: nowrap;
+    color: #555;
 }
 
 .xs_price span {
@@ -333,26 +335,24 @@
 }
 
 span.old-price {
-    background: url(../img/bg.png) no-repeat scroll 0 -422px transparent;
-    color: #757575;
     font-weight: 400;
     padding-right: 5px;
     text-decoration: line-through;
+    color: #757575;
 }
 
 span.new-price {
-    background: url(../img/bg.png) no-repeat scroll 0 -420px transparent;
-    color: #ff4a00;
     font-size: 14px;
     font-weight: 700;
+    color: #ff4a00;
 }
 
 .book-name {
-    height: 37px;
-    overflow: hidden;
-    text-align: center;
-    width: 160px;
     position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 37px;
+    text-align: center;
 }
 
 .book-name a {
@@ -362,71 +362,77 @@ span.new-price {
 }
 
 .xscx {
-    height: 365px;
-    width: 235px;
-    border: 1px solid #666;
-    background-color: #f9f9f9;
     clear: both;
     overflow: hidden;
+    width: 235px;
+    height: 365px;
     padding: 5px;
+    border: 1px solid #666;
+    background-color: #f9f9f9;
 }
 
 .xscx_list li {
-    overflow: hidden;
-    position: relative;
-    height: 30px;
     line-height: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
     padding: 5px 10px;
 }
 
 .xscx_list a:hover {
-    color: #C7754F;
     text-decoration: underline;
+    color: #c7754f;
 }
 
 .xscx_list strong {
-    background: #999999;
-    color: #fff;
-    display: block;
-    float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     font-weight: 700;
-    height: 18px;
     line-height: 18px;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
     margin-right: 4px;
     padding-top: 4px;
     text-align: center;
-    width: 18px;
+    color: #fff;
+    background: #999;
 }
 
 .bd {
     width: 235px;
     height: 20px;
+}
+
+.bd1 {
     margin-top: 25px;
+}
+
+.bd2 {
+    margin-bottom: 15px;
 }
 
 .bd a {
     float: right;
-    color: #0B85FF;
+    color: #0b85ff;
 }
 
 .tscx {
-    height: 325px;
-    width: 235px;
     clear: both;
     overflow: hidden;
+    width: 235px;
+    height: 325px;
     padding: 5px;
 }
 
 .tscx_title {
+    font: 400 18px 'microsoft yahei';
     height: 25px;
     padding-top: 25px;
     padding-left: 20px;
     color: #333;
     border-bottom: 1px solid #3c4d6a;
-    font: 400 18px "microsoft yahei";
-
 }
 
 .tscx_list {
@@ -436,57 +442,58 @@ span.new-price {
 }
 
 .tscx_list li {
-    overflow: hidden;
-    position: relative;
-    height: 30px;
     line-height: 30px;
+    position: relative;
+    overflow: hidden;
+    height: 30px;
     padding: 5px 10px;
 }
 
 .tscx_list a:hover {
-    color: #C7754F;
     text-decoration: underline;
+    color: #c7754f;
 }
 
 .tscx_list strong {
-    background: #999999;
-    color: #fff;
-    display: block;
-    float: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10px;
     font-weight: 700;
-    height: 18px;
     line-height: 18px;
+    display: block;
+    float: left;
+    width: 18px;
+    height: 18px;
     margin-right: 4px;
     padding-top: 4px;
     text-align: center;
-    width: 18px;
+    color: #fff;
+    background: #999;
 }
 
 .main2 {
     width: 1210px;
-    margin: 0 auto;
     height: 950px;
+    margin: 0 auto;
 }
 
 .book {
-    height: 700px;
     width: 100%;
+    height: 700px;
     margin-top: 10px;
     /*background-color:#99CCCC*/
 }
 
 .tjbook_title {
+    font: 400 18px 'microsoft yahei';
     height: 25px;
     padding-top: 25px;
     padding-left: 20px;
-    color: #C7754F;
+    color: #c7754f;
     border-bottom: 1px solid #3c4d6a;
-    font: 400 18px "microsoft yahei";
 }
 
-.one, .two {
+.one,
+.two {
     padding-right: 25px;
 }
 
@@ -495,39 +502,38 @@ span.new-price {
 }
 
 .copyright_content {
-    height: 250px;
     width: 100%;
+    height: 250px;
     margin: 0 auto;
+    margin-top: 10px;
     /*background-color:#E8E8E8;*/
     padding-top: 20px;
-    margin-top: 10px;
 }
 
 .copyright_content li {
+    font-family: '΢���ź�';
+    line-height: 30px;
     float: left;
     width: 300px;
     text-align: center;
-    line-height: 30px;
-    font-family: "΢���ź�";
     background: url(../images/line.png) no-repeat right center;
 }
 
 .copyright_content a {
-    color: #000;
     font-size: 14px;
+    color: #000;
 }
 
-.
 .copyright_title {
     font-size: 20px;
     font-weight: bold;
 }
 
 #footer {
-    border-top: 1px solid #E5E5E5;
     padding: 20px 0 30px;
     text-align: center;
     color: #666;
+    border-top: 1px solid #e5e5e5;
 }
 
 #footer a {
@@ -535,8 +541,140 @@ span.new-price {
 }
 
 #footer a:hover {
-    color: #C7754F;
     text-decoration: underline;
+    color: #c7754f;
 }
 
 
+/*回到顶部效果*/
+
+#top_btn {
+    position: fixed;
+    right: 25px;
+    bottom: 30px;
+    display: none;
+    width: 40px;
+    height: 40px;
+    background: url(../images/top_bg.png) left top;
+}
+
+#top_btn:hover {
+    background-position: left bottom;
+}
+
+
+/*登录弹出层*/
+
+#mask {
+    /*兼容IE，IE不支持opacity*/
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: .70;
+    background: #000;
+    filter: alpha(opacity=70);
+}
+
+#login_area {
+    position: fixed;
+    z-index: 199;
+    top: 100px;
+    left: 100px;
+    display: none;
+    width: 400px;
+    height: auto;
+    background: #fff;
+}
+
+.login_title {
+    font-size: 16px;
+    line-height: 48px;
+    height: 48px;
+    padding-left: 20px;
+    cursor: move;
+    color: #efefef;
+    border-bottom: 1px solid #efefef;
+    background: #e4393c;
+}
+
+#close {
+    position: absolute;
+    display:block;
+    top: 5px;
+    right: 5px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: url(../images/close.png) no-repeat;
+}
+
+
+/*内容区域*/
+
+.loginCon {
+    padding: 15px 20px;
+    border: 1px solid #d5d5d5;
+    border-top:0;
+}
+
+
+/*每行元素可能需要的样式*/
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.h40 {
+    line-height: 40px;
+    height: 40px;
+    text-align: right;
+}
+
+
+/*输入框公用的样式*/
+
+.login_input {
+    font-size: 16px;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    text-indent: 30px;
+    color: #000;
+    border: 1px solid #d5d5d5;
+    outline: none;
+}
+
+
+/*两个输入框的icon设置*/
+
+.login_user {
+    background: url(../images/input_user.png) no-repeat 2px;
+}
+
+.login_password {
+    background: url(../images/input_password.png) no-repeat 2px;
+}
+
+
+/*提交按钮的样式*/
+
+.login_submit {
+    font-size: 16px;
+    line-height: 50px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    outline: none;
+    background: #3b7ae3;
+}
+
+.login_submit:hover {
+    background: #3f81b0;
+}
