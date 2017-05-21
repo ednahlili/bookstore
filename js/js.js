@@ -1,5 +1,5 @@
-/*商品分类悬浮层*/
 window.onload = function() {
+    /*商品分类悬浮层*/
     var Lis = document.getElementsByTagName("li");
     for (i = 0; i < Lis.length; i++) {
         Lis[i].i = i;
@@ -38,15 +38,13 @@ window.onload = function() {
     var clientHeight = document.documentElement.clientHeight;
 
     /*滚动条滚动时触发*/
-    window.onscroll=function()
-    {
-    	var ostop = document.documentElement.scrollTop || document.body.scrollTop;
-			if (ostop >= clientHeight) {
-                top_obtn.style.display = "block";
-            }
-             else {
-                top_obtn.style.display = "none";
-            }
+    window.onscroll = function() {
+        var ostop = document.documentElement.scrollTop || document.body.scrollTop;
+        if (ostop >= clientHeight) {
+            top_obtn.style.display = "block";
+        } else {
+            top_obtn.style.display = "none";
+        }
     }
     top_obtn.onclick = function() {
         /*设置定时器*/
@@ -63,5 +61,91 @@ window.onload = function() {
             }
         }, 30);
     }
-
 }
+
+/****************************************************登录悬浮层**************************************/
+//获取元素对象
+function g(id) {
+    return document.getElementById(id);
+}
+
+//登录框自动居中
+function autoCenter(el) {
+    //获取可视区域宽高
+    var wHeight = document.documentElement.clientHeight;
+    var wWidth = document.documentElement.clientWidth;
+    //获取元素的宽高
+    var elw = el.offsetWidth;
+    var elh = el.offsetHeight;
+    el.style.left = (wWidth - elw) / 2 + "px";
+    el.style.top = (wHeight - elh) / 2 + "px";
+}
+
+//全屏遮罩
+//获取页面的宽度和高度
+var sHeight = document.documentElement.scrollHeight;
+var sWidth = document.documentElement.scrollWidth;
+
+//添加遮罩层结点
+var omask = document.createElement("div");
+omask.id = "mask";
+omask.style.height = sHeight + "px";
+omask.style.width = sWidth + "px";
+document.body.appendChild(omask);
+
+ function showDialog() {
+    omask.style.display = "block";
+    g("login_area").style.display = "block";
+    autoCenter(g("login_area"));
+    //鼠标偏移
+    var mouseOffsetX = 0;
+    var mouseOffsetY = 0;
+    var isDraging = false; //是否可拖拽
+    //鼠标事件1，在标题栏上按下
+    g("login_title").addEventListener('mousedown', function(e) {
+        var e = e || window.event;
+        mouseOffsetX = e.pageX - g("login_area").offsetLeft;
+        mouseOffsetY = e.pageY - g("login_area").offsetTop;
+        isDraging = true;
+    });
+    //鼠标事件2，鼠标移动时
+    document.onmousemove = function(e) {
+            var e = e || window.event;
+            //鼠标当前位置
+            var mouseX = e.pageX;
+            var mouseY = e.pageY;
+            //浮层元素的新位置
+            var moveX = 0;
+            var moveY = 0;
+            if (isDraging === true) {
+                //鼠标的偏移
+                moveX = mouseX - mouseOffsetX;
+                moveY = mouseY - mouseOffsetY;
+                //范围限定:moveX>0且moveX<(页面宽度-浮层宽度)
+                var pageWidth = document.documentElement.clientWidth;
+                var pageHeight = document.documentElement.clientHeight;
+                var dialogWidth = g("login_area").offsetWidth;
+                var dialogHeight = g("login_area").offsetHeight;
+                var maxX=pageWidth - dialogWidth;
+                var maxY=pageHeight-dialogHeight;
+                //moveX=Math.max(0,moveX);返回大的值，则moveX最小为0
+                moveX=Math.min(maxX,Math.max(0,moveX));
+                moveY=Math.min(maxY,Math.max(0,moveY));
+
+                g("login_area").style.left = moveX + 'px';
+                g("login_area").style.top = moveY + 'px';
+
+            }
+        }
+        //鼠标事件3，鼠标松开时不可拖动
+    document.onmouseup = function() {
+        isDraging = false;
+    }
+}
+ function hideDialog() {
+    g("login_area").style.display = "none";
+    omask.style.display = "none";
+}
+window.onresize =function(){
+            autoCenter(g('login_area'));
+        }
