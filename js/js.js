@@ -54,7 +54,6 @@ window.onload = function() {
             var ispeed = Math.floor(-ostop / 6);
             /*加负号让滚动条到达最上面*/
             /*让速度先快后慢*/
-            console.log(ostop - ispeed);
             document.documentElement.scrollTop = document.body.scrollTop += ispeed;
             if (ostop == 0) {
                 clearInterval(timer);
