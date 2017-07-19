@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>畅阅书城</title>
+    <link rel="icon" href="images/title.jpg" type="image/jpg" sizes="34*30"/>
     <link href="css/base.css" rel="stylesheet" type="text/css" />
     <link href="css/common.css" rel="stylesheet" type="text/css" />
 </head>
@@ -12,7 +13,7 @@
     <!--头部信息区-->
     <div class="head">
         <div class="head-left hover_red">
-            <a href="javascript:login();">你好,请登录</a>&nbsp;&nbsp;
+            <a href="javascript:showDialog();" id="login">你好,请登录</a>&nbsp;&nbsp;
             <a href="reg.html" target="_blank" class="style-red">免费注册</a></li>
         </div>
         <div class="head-right">
@@ -896,8 +897,34 @@
     <!--回到顶部-->
     <a href="javascript:;" id="top_btn" title="回到顶部"></a>
     <!--阻止a链接的默认行为：回到顶部-->
+    <!--登录弹出层-->
+    <div id="login_area">
+        <div class="login_title" id="login_title">
+            登录
+            <a href="javascript:hideDialog();" id="close"></a>
+        </div>
+        <div class="loginCon">
+            <!-- 两个输入框 -->
+            <div class="h40 pt15">
+                <input class="login_input login_user" type="input" placeholder="手机/邮箱/用户名" />
+            </div>
+            <div class="h40 pt15">
+                <input class="login_input login_password" type="input" placeholder ="密码" />
+            </div>
+            <div class="h40">
+                <a href="#">忘记密码</a>
+            </div>
+            <!-- 登录按钮 -->
+            <div>
+                <a class="login_submit" href="#">登录</a>
+            </div>
+            <div class="h40">
+                <a href="#">立即注册</a>
+            </div>
+        </div>
+    </div>
     <script type="text/javascript" src="js/myfocus-2.0.1.min.js" charset="utf-8"></script>
-    <script type="text/javascript" src="js/js.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/js.js" charset "utf-8";></script>
 </body>
 
 </html>
